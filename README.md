@@ -14,17 +14,17 @@ More Information:<br/>
 
 ```
 try {
-	PassKit pk = new PassKit("<< yourApiKey >>","<< yourApiSecret >>");
-	
-	Pass p = new Pass();
-	p.templateName = "<< yourTemplateName >>";
-    
-    string pid = pk.createPass(p);
-    
-    Console.WriteLine("https://q.passkit.net/p-" + pid);
+  PassKit pk = new PassKit("<< yourApiKey >>","<< yourApiSecret >>");
+
+  Pass p = new Pass();
+  p.templateName = "<< yourTemplateName >>";
+  
+  string pid = pk.createPass(p);
+  
+  Console.WriteLine("https://q.passkit.net/p-" + pid);
 } 
 catch (Exception e) {
-    Console.WriteLine(e.Message);
+  Console.WriteLine(e.Message);
 }
 ```
 
@@ -32,17 +32,17 @@ catch (Exception e) {
 
 ```
 try {
-	PassKit pk = new PassKit("<< yourApiKey >>","<< yourApiSecret >>");
-	
-	Pass p = new Pass();
-	p.passbook.bgColor = "#ffffff";
-    
-    string pid = pk.updatePass("<< yourPassId >>", p);
-    
-    Console.WriteLine("https://q.passkit.net/p-" + pid);
-} 
+  PassKit pk = new PassKit("<< yourApiKey >>","<< yourApiSecret >>");
+  
+  Pass p = new Pass();
+  p.passbook.bgColor = "#ffffff";
+  
+  string pid = pk.updatePass("<< yourPassId >>", p);
+  
+  Console.WriteLine("https://q.passkit.net/p-" + pid);
+}
 catch (Exception e) {
-    Console.WriteLine(e.Message);
+  Console.WriteLine(e.Message);
 }
 ```
 
@@ -50,11 +50,11 @@ catch (Exception e) {
 
 ```
 try {
-	PassKit pk = new PassKit("<< yourApiKey >>","<< yourApiSecret >>");
-
-	Pass p = pk.retrievePass("<< yourPassId >>");
-} 
+  PassKit pk = new PassKit("<< yourApiKey >>","<< yourApiSecret >>");
+  
+  Pass p = pk.retrievePass("<< yourPassId >>");
+}
 catch (Exception e) {
-    Console.WriteLine(e.Message);
+  Console.WriteLine(e.Message);
 }
 ```
