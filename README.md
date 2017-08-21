@@ -35,6 +35,7 @@ try {
   PassKit pk = new PassKit("<< yourApiKey >>","<< yourApiSecret >>");
   
   Pass p = new Pass();
+  p.passbook = new PassPassbook();
   p.passbook.bgColor = "#ffffff";
   
   string pid = pk.updatePass("<< yourPassId >>", p);
