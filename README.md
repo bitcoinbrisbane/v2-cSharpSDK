@@ -10,16 +10,49 @@ More Information:<br/>
 <a href="https://cherrypie.passkit.net">Get an Cherry Pie / API account</a><br/>
 <a href="https://passkit.com">About PassKit</a><br/>
 
-** Create a pass **
+**Create a pass**
 
 ```
 try {
 	PassKit pk = new PassKit("<< yourApiKey >>","<< yourApiSecret >>");
 	
 	Pass p = new Pass();
-    p.templateName = "<< yourTemplateName >>";
+	p.templateName = "<< yourTemplateName >>";
+    
     string pid = pk.createPass(p);
+    
     Console.WriteLine("https://q.passkit.net/p-" + pid);
+} 
+catch (Exception e) {
+    Console.WriteLine(e.Message);
+}
+```
+
+**Update a pass**
+
+```
+try {
+	PassKit pk = new PassKit("<< yourApiKey >>","<< yourApiSecret >>");
+	
+	Pass p = new Pass();
+	p.passbook.bgColor = "#ffffff";
+    
+    string pid = pk.updatePass("<< yourPassId >>", p);
+    
+    Console.WriteLine("https://q.passkit.net/p-" + pid);
+} 
+catch (Exception e) {
+    Console.WriteLine(e.Message);
+}
+```
+
+**Retrieve a pass**
+
+```
+try {
+	PassKit pk = new PassKit("<< yourApiKey >>","<< yourApiSecret >>");
+
+	Pass p = pk.retrievePass("<< yourPassId >>");
 } 
 catch (Exception e) {
     Console.WriteLine(e.Message);
