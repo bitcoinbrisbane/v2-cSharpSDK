@@ -308,7 +308,6 @@ namespace v2PassKitSDK
                         case "GET":
                             response = Unirest.get(url)
                                     .header("Authorization", authHeader)
-                                    .header("Content-Type", "application/json")
                                     .asString();
                             break;
                         case "PUT":
@@ -324,7 +323,6 @@ namespace v2PassKitSDK
                             {
                                 response = Unirest.put(url)
                                     .header("Authorization", authHeader)
-                                    .header("Content-Type", "application/json")
                                     .asString();
                             }
                             break;
@@ -341,7 +339,6 @@ namespace v2PassKitSDK
                             {
                                 response = Unirest.post(url)
                                     .header("Authorization", authHeader)
-                                    .header("Content-Type", "application/json")
                                     .asString();
                             }
                             break;
