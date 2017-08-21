@@ -13,7 +13,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <PackageId>PassKitSDK</PackageId>
-    <PackageVersion>1.2</PackageVersion>
+    <PackageVersion>1.2.2</PackageVersion>
     <Authors>PassKit Inc.</Authors>
     <DevelopmentDependency>true</DevelopmentDependency>
     <Owners>PassKit Inc.</Owners>

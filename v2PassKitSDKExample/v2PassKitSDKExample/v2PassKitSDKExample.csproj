@@ -48,7 +48,7 @@
       <HintPath>..\packages\Unirest-APIMATIC.1.0.1.26\lib\net45\unirest-net.dll</HintPath>
     </Reference>
     <Reference Include="v2PassKitSDK">
-      <HintPath>..\packages\PassKitSDK.1.2.1\lib\net45\v2PassKitSDK.dll</HintPath>
+      <HintPath>..\packages\PassKitSDK.1.2.2\lib\net45\v2PassKitSDK.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
