@@ -356,6 +356,8 @@ namespace v2PassKitSDK
                                             "URL: " + url + ". Request Payload: " + payload + ". " +
                                             "Request Response: " + response.Body + ".");
                     }
+                    // Sleep 200ms
+                    System.Threading.Thread.Sleep(200);
                 }
 
                 // It either reaches this on success, or after 5 retries. In case it's not success, then return
